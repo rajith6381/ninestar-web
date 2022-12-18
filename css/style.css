@@ -38,42 +38,51 @@
 /*team*/
 .img-pos{
 position: relative;
+
 }
 .side-icon{
 	position:absolute;
 	top:0;
 	bottom:0;
-	left:0;
-	right:0;
-	background-color:walter rgb(19, 15, 15);
+	left:11px;
+	right:10px;
+	background-image: linear-gradient(to top,rgba(0,0,0),transparent);
 	z-index: 100;
 	opacity:0;
 	overflow: hidden;
+	
+}
+.side-icon i{
+	padding-top: 5px;
 }
 .side-i{
 	position: absolute;
 	top:0;
-	left:10px;
+	
 	bottom:0;
 	padding:1rem;
-	background-image: linear-gradient(to right,rgb(14, 13, 13, 0.6),rgba(223, 214, 214, 0.6));
+	background-color:rgb(14, 13, 13, 0.6);
 	color:white;
+	
 }
 .side-i li{
 	list-style-type: none;
+	margin: 1rem 0;
 }
 .side-cont{
 	position: absolute;
-	right: 11px;
-	left:10px;
+	left:0;
 	bottom:0;
-	background-image: linear-gradient(rgba(201, 191, 191, 0.6),rgb(14, 13, 13, 0.6));
+	right:0;
 	text-align: center;
 	color:white;
 }
 .img-pos:hover .side-icon{
 	opacity:1;
 	transition:ease-in-out 0.5s;
+}
+.img-pos{
+	position: relative;
 }
 
 /*cord*/
@@ -99,6 +108,10 @@ position: relative;
 .por-icon p,h2{
        margin-top: 5px;
 }
+.por-icon i{
+	
+}
+
 .scrol p{
 	margin-right:5px;
 	padding:5px 8px;
@@ -180,20 +193,53 @@ summary:hover{
 footer{
 	background:#fdf1ec;
 }
+
 .ficons {
      color: #fff;
 	 background:#eb5d1e; 
-	 width:15%;
-	 height: 6vh;
+	 width:30px;
+	 height:30px;
 	 border-radius:50%;
 	 text-align: center;
 	 display: flex;
 	 justify-content: center;
 	 align-items: center;
 }
-.social{
+
+.ficons i{
+	width: 15%;
+	height: 6vh;
+	text-align: center;
 	display: flex;
-	justify-content: space-between;
+	 justify-content: center;
+	 align-items: center;
+}
+@media(min-width:390px){
+	.ficons i{
+		width: 9%;
+		height: 9vh;
+		text-align: center;
+		display: flex;
+		 justify-content: center;
+		 align-items: center;
+	}
+}
+
+@media(min-width:350px){
+	.social{
+		display: flex;
+		justify-content: space-between;
+		width:50%;
+	
+	}
+}
+@media(min-width:1024px){
+	.social{
+		display: flex;
+		justify-content: space-between;
+		width:80%;
+	
+	}
 }
 .right i{
 	color: #f39e7a;
@@ -209,13 +255,14 @@ footer{
 .por-icon i{
 	background-color:#fcebe3;
 	color:black;
-	width:50px;
-	height:50px;
+	width: 40px;
+	height:40px;
 	border-radius:50%;
 	align-items:center;
-	
 	font-size: 1rem;
-	padding:12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .por-icon{
@@ -234,6 +281,6 @@ footer{
  transition: 0.5s;
  left: 11px;
 }
-.last{
-	background-color: #fdf1ec;
+.logos{
+	width: 50%;
 }
